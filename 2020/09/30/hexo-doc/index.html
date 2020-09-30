@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://liujinxia.github.io/blog/img/image-20200930112008188.png">
 <meta property="og:image" content="https://liujinxia.github.io/Users/liujinxia/Downloads/project/jinxia/blog/blog/themes/yilia-plus/source/img/image-20200930151756609.png">
 <meta property="article:published_time" content="2020-09-30T06:29:56.000Z">
-<meta property="article:modified_time" content="2020-09-30T07:25:53.644Z">
+<meta property="article:modified_time" content="2020-09-30T07:49:27.615Z">
 <meta property="article:author" content="Jinxia Liu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://liujinxia.github.io/blog/img/image-20200930104733400.png">
@@ -224,7 +224,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">468字</span>
+      <span class="post-count">526字</span>
     </span>
   </span>
 
@@ -260,7 +260,7 @@
 
 <h3 id="4-与github关联"><a href="#4-与github关联" class="headerlink" title="4.与github关联"></a>4.与github关联</h3><p>deploy:</p>
 <p>  type: git</p>
-<p>  repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;</a>:liujinxia/docs.git   #不用http 经常报错</p>
+<p>  repo: <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#109;">&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#109;</a>:liujinxia/docs.git   #不用http 经常报错</p>
 <p>  branch: gh-pages</p>
 <p>安装插件：npm install hexo-deployer-git –save</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g </span><br><span class="line">hexo d  <span class="comment">#github pages部署</span></span><br></pre></td></tr></table></figure>
@@ -272,6 +272,8 @@
 <p>引用的时候直接：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![image-20200930112008188](/blog/img/image-20200930112008188.png)</span><br></pre></td></tr></table></figure>
 
+<h3 id="6-文章目录生成"><a href="#6-文章目录生成" class="headerlink" title="6.文章目录生成"></a>6.文章目录生成</h3><p>npm i hexo-generator-json-content –save<br>在根目录_config.yml里添加配置：</p>
+<p>  jsonContent:<br>    meta: false<br>    pages: false<br>    posts:<br>      title: true<br>      date: true<br>      path: true<br>      text: false<br>      raw: false<br>      content: false<br>      slug: false<br>      updated: false<br>      comments: false<br>      link: false<br>      permalink: false<br>      excerpt: false<br>      categories: false<br>      tags: true</p>
 <h3 id="附：hexo命令"><a href="#附：hexo命令" class="headerlink" title="附：hexo命令"></a>附：hexo命令</h3><p>现在来介绍常用的Hexo 命令</p>
 <p>npm install hexo -g #安装Hexo<br>npm update hexo -g #升级<br>hexo init #初始化博客</p>
 <p>命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p>
