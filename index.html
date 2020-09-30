@@ -190,6 +190,108 @@
             
 
   
+    <article id="post-hexo-doc" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/blog/2020/09/30/hexo-doc/" target="_blank">hexo_doc</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/blog/2020/09/30/hexo-doc/" class="archive-article-date">
+        <time datetime="2020-09-30T06:29:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="Blog-steps-Hexo"><a href="#Blog-steps-Hexo" class="headerlink" title="Blog steps Hexo"></a>Blog steps Hexo</h2><p>参考教程：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26625249">https://zhuanlan.zhihu.com/p/26625249</a></p>
+<p>node版本用v11.0.0</p>
+<h3 id="1-创建github-repository"><a href="#1-创建github-repository" class="headerlink" title="1.创建github repository"></a>1.创建github repository</h3><p>修改settings，github page 路径:/blog  分支用gh-pages</p>
+<p><img src="2020/09/30/hexo_doc/image-20200930104733400.png" alt="image-20200930104733400"></p>
+<h3 id="2-本地创建空的文件夹"><a href="#2-本地创建空的文件夹" class="headerlink" title="2.本地创建空的文件夹"></a>2.本地创建空的文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli   <span class="comment">#安装hexo依赖</span></span><br><span class="line">hexo init blog   <span class="comment">#该命令创建blog文件夹~/Downloads/project/jinxia/blog/blog</span></span><br><span class="line"><span class="built_in">cd</span> ~/Downloads/project/jinxia/blog/blog &amp;&amp; hexo new test_my_site  <span class="comment">#创建文章</span></span><br><span class="line">hexo g    <span class="comment">#生成js，css，html页面</span></span><br><span class="line">hexo s  <span class="comment">#查看本地效果</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#1</span></span><br><span class="line">liujinxia@liujinxiadeMacBook-Pro-2  ~/Downloads/project/jinxia/blog/blog  hexo clean</span><br><span class="line"></span><br><span class="line">(node:9992) ExperimentalWarning: The fs.promises API is experimental</span><br><span class="line"></span><br><span class="line">INFO Validating config</span><br><span class="line"></span><br><span class="line">INFO Deleted database.</span><br><span class="line"></span><br><span class="line">INFO Deleted public folder.</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-切换主题"><a href="#3-切换主题" class="headerlink" title="3. 切换主题"></a>3. 切换主题</h3><p>主题选择网站：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p>切换方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cd .&#x2F;themes&#x2F;</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;JoeyBling&#x2F;hexo-theme-yilia-plus.git</span><br><span class="line">mv hexo-theme-yilia-plus yilia-plus</span><br><span class="line"></span><br><span class="line">修改hexo根目录下的 _config.yml ➡️ theme: yilia-plus</span><br><span class="line">更新：</span><br><span class="line">cd themes&#x2F;yilia-plus</span><br><span class="line">git pull</span><br><span class="line"></span><br><span class="line">hexo clean</span><br><span class="line">hexo g #报错没事</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-与github关联"><a href="#4-与github关联" class="headerlink" title="4.与github关联"></a>4.与github关联</h3><p>deploy:</p>
+<p>  type: git</p>
+<p>  repo: <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#105;&#116;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a>:liujinxia/docs.git   #不用http 经常报错</p>
+<p>  branch: gh-pages</p>
+<p>安装插件：npm install hexo-deployer-git –save</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g </span><br><span class="line">hexo d  <span class="comment">#github pages部署</span></span><br></pre></td></tr></table></figure>
+
+<p>Github 可以查看部署的情况：</p>
+<p>![image-20200930112008188](/Users/liujinxia/Library/Application Support/typora-user-images/image-20200930112008188.png)</p>
+<h3 id="附：hexo命令"><a href="#附：hexo命令" class="headerlink" title="附：hexo命令"></a>附：hexo命令</h3><p>现在来介绍常用的Hexo 命令</p>
+<p>npm install hexo -g #安装Hexo<br>npm update hexo -g #升级<br>hexo init #初始化博客</p>
+<p>命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p>
+<p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>
+<p>刚刚的三个命令依次是新建一篇博客文章、生成网页、在本地预览的操作。</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/blog/2020/09/30/hexo-doc/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-maven-lifecycle" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -219,35 +321,7 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h2 id="Blog-steps-Hexo"><a href="#Blog-steps-Hexo" class="headerlink" title="Blog steps Hexo"></a>Blog steps Hexo</h2><p>参考教程：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26625249">https://zhuanlan.zhihu.com/p/26625249</a></p>
-<p>node版本用v11.0.0</p>
-<h3 id="1-创建github-repository"><a href="#1-创建github-repository" class="headerlink" title="1.创建github repository"></a>1.创建github repository</h3><p>修改settings，github page 路径:/blog  分支用gh-pages</p>
-<p><img src="./img/image-20200930104733400.png" alt="image-20200930104733400"></p>
-<h3 id="2-本地创建空的文件夹"><a href="#2-本地创建空的文件夹" class="headerlink" title="2.本地创建空的文件夹"></a>2.本地创建空的文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli   <span class="comment">#安装hexo依赖</span></span><br><span class="line">hexo init blog   <span class="comment">#该命令创建blog文件夹~/Downloads/project/jinxia/blog/blog</span></span><br><span class="line"><span class="built_in">cd</span> ~/Downloads/project/jinxia/blog/blog &amp;&amp; hexo new test_my_site  <span class="comment">#创建文章</span></span><br><span class="line">hexo g    <span class="comment">#生成js，css，html页面</span></span><br><span class="line">hexo s  <span class="comment">#查看本地效果</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#1</span></span><br><span class="line">liujinxia@liujinxiadeMacBook-Pro-2  ~/Downloads/project/jinxia/blog/blog  hexo clean</span><br><span class="line"></span><br><span class="line">(node:9992) ExperimentalWarning: The fs.promises API is experimental</span><br><span class="line"></span><br><span class="line">INFO Validating config</span><br><span class="line"></span><br><span class="line">INFO Deleted database.</span><br><span class="line"></span><br><span class="line">INFO Deleted public folder.</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="3-切换主题"><a href="#3-切换主题" class="headerlink" title="3. 切换主题"></a>3. 切换主题</h3><p>主题选择网站：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
-<p>切换方式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cd .&#x2F;themes&#x2F;</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;JoeyBling&#x2F;hexo-theme-yilia-plus.git</span><br><span class="line">mv hexo-theme-yilia-plus yilia-plus</span><br><span class="line"></span><br><span class="line">修改hexo根目录下的 _config.yml ➡️ theme: yilia-plus</span><br><span class="line">更新：</span><br><span class="line">cd themes&#x2F;yilia-plus</span><br><span class="line">git pull</span><br><span class="line"></span><br><span class="line">hexo clean</span><br><span class="line">hexo g #报错没事</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="4-与github关联"><a href="#4-与github关联" class="headerlink" title="4.与github关联"></a>4.与github关联</h3><p>deploy:</p>
-<p>  type: git</p>
-<p>  repo: <a href="mailto:&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a>:liujinxia/docs.git   #不用http 经常报错</p>
-<p>  branch: gh-pages</p>
-<p>安装插件：npm install hexo-deployer-git –save</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g </span><br><span class="line">hexo d  <span class="comment">#github pages部署</span></span><br></pre></td></tr></table></figure>
-
-<p>Github 可以查看部署的情况：</p>
-<p>![image-20200930112008188](/Users/liujinxia/Library/Application Support/typora-user-images/image-20200930112008188.png)</p>
-<h3 id="附：hexo命令"><a href="#附：hexo命令" class="headerlink" title="附：hexo命令"></a>附：hexo命令</h3><p>现在来介绍常用的Hexo 命令</p>
-<p>npm install hexo -g #安装Hexo<br>npm update hexo -g #升级<br>hexo init #初始化博客</p>
-<p>命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p>
-<p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>
-<p>刚刚的三个命令依次是新建一篇博客文章、生成网页、在本地预览的操作。</p>
-
+    
     
 
     
