@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://liujinxia.github.io/blog">
-  <title>Archives: 2020 | Hexo</title>
+  <title>VUE | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://liujinxia.github.io/blog/archives/2020/index.html">
+  <meta name="description" content="项目创建 npm run dev：执行package.json里面的“dev”方法  1234567&quot;scripts&quot;: &amp;#123;  &quot;dev&quot;: &quot;vue-cli-service serve&quot;,  &quot;build&quot;: &quot;vue-cli-service build&quot;,  &quot;lint&amp;qu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VUE">
+<meta property="og:url" content="https://liujinxia.github.io/blog/2020/09/30/VUE/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="项目创建 npm run dev：执行package.json里面的“dev”方法  1234567&quot;scripts&quot;: &amp;#123;  &quot;dev&quot;: &quot;vue-cli-service serve&quot;,  &quot;build&quot;: &quot;vue-cli-service build&quot;,  &quot;lint&amp;qu">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-30T09:42:07.000Z">
+<meta property="article:modified_time" content="2020-09-30T09:43:15.490Z">
 <meta property="article:author" content="Jinxia Liu">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/blog/atom.xml" title="Hexo" type="application/atom+xml">
@@ -163,41 +168,157 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-VUE" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/blog/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/blog/2020/09/30/VUE/" class="archive-article-date">
-        <time datetime="2020-09-30T09:42:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/blog/2020/09/30/VUE/" target="_blank">VUE</a>
   
+    <h1 class="article-title" itemprop="name">
+      VUE
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/blog/2020/09/30/VUE/" class="archive-article-date">
+        <time datetime="2020-09-30T09:42:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">1.2k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">6分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="项目创建"><a href="#项目创建" class="headerlink" title="项目创建"></a>项目创建</h1><ol>
+<li>npm run dev：执行package.json里面的“dev”方法</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">  <span class="string">&quot;dev&quot;</span>: <span class="string">&quot;vue-cli-service serve&quot;</span>,</span><br><span class="line">  <span class="string">&quot;build&quot;</span>: <span class="string">&quot;vue-cli-service build&quot;</span>,</span><br><span class="line">  <span class="string">&quot;lint&quot;</span>: <span class="string">&quot;vue-cli-service lint&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="基本框架Layout模块"><a href="#基本框架Layout模块" class="headerlink" title="基本框架Layout模块"></a>基本框架Layout模块</h1><h2 id="1-框架布局"><a href="#1-框架布局" class="headerlink" title="1.框架布局"></a>1.框架布局</h2><p><strong>head bar</strong></p>
+<p><strong>Nav bar</strong></p>
+<p><strong>main content</strong></p>
+<h2 id="2-数据Mock准备"><a href="#2-数据Mock准备" class="headerlink" title="2.数据Mock准备"></a>2.数据Mock准备</h2><a id="more"></a>
+<h2 id="3-HTTP请求封装"><a href="#3-HTTP请求封装" class="headerlink" title="3.HTTP请求封装"></a>3.HTTP请求封装</h2><p><strong>错误信息兼容展示</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// response 响应拦截器</span></span><br><span class="line">instance.interceptors.response.use(...)</span><br></pre></td></tr></table></figure>
+
+<p><strong>get,put,post,delete</strong>方法请求方式定义：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">工具代码：</span><br><span class="line">headers: &#123;</span><br><span class="line">  <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;application/json;charset=UTF-8&#x27;</span></span><br><span class="line">&#125;,</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  axios:</span><br><span class="line"> <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;&#125;)</span><br><span class="line"> <span class="keyword">const</span> instance = axios.create(&#123;&#125;)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">方法统一定义主要是调用方代码简洁:</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> update = <span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> axios(&#123;</span><br><span class="line">    method: <span class="string">&#x27;put&#x27;</span>,</span><br><span class="line">    url: <span class="string">&#x27;/api/projects&#x27;</span>,</span><br><span class="line">    data: data</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">调用方：</span><br><span class="line"> 						api.project.update(params).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">                  <span class="built_in">this</span>.editLoading = <span class="literal">false</span></span><br><span class="line">                  <span class="keyword">if</span> (res.code == <span class="number">10000</span>) &#123;</span><br><span class="line">                    <span class="built_in">this</span>.$message(&#123;<span class="attr">message</span>: res.msg, <span class="attr">type</span>: <span class="string">&#x27;success&#x27;</span>&#125;)</span><br><span class="line">                    <span class="built_in">this</span>.dialogVisible = <span class="literal">false</span></span><br><span class="line">                    <span class="built_in">this</span>.$refs[<span class="string">&#x27;dataForm&#x27;</span>].resetFields()</span><br><span class="line">                  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="built_in">this</span>.$message(&#123;<span class="attr">message</span>: <span class="string">&#x27;操作失败, &#x27;</span> + res.msg, <span class="attr">type</span>: <span class="string">&#x27;error&#x27;</span>&#125;)</span><br><span class="line">                  &#125;</span><br><span class="line">                  <span class="built_in">this</span>.findPage(<span class="literal">null</span>)</span><br><span class="line">                &#125;).catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">                  <span class="built_in">this</span>.editLoading = <span class="literal">false</span></span><br><span class="line">                  alert(error.message)<span class="comment">//主要容错的地方</span></span><br><span class="line">                &#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-菜单处理和路由生成"><a href="#4-菜单处理和路由生成" class="headerlink" title="4.菜单处理和路由生成"></a>4.菜单处理和路由生成</h2><p>静态路由：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">  routes: [</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">      name: <span class="string">&#x27;Home&#x27;</span>,</span><br><span class="line">      component: Home,</span><br><span class="line">      children: [</span><br><span class="line">        &#123;</span><br><span class="line">          name: <span class="string">&#x27;首页&#x27;</span>,</span><br><span class="line">          path: <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">          component: cop_10,</span><br><span class="line">          meta: &#123;</span><br><span class="line">            icon: <span class="string">&#x27;fa fa-home fa-lg&#x27;</span>,</span><br><span class="line">            index: <span class="number">0</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          name: <span class="string">&#x27;帮助文档&#x27;</span>,</span><br><span class="line">          path: <span class="string">&#x27;help&#x27;</span>,</span><br><span class="line">          component: cop_10,</span><br><span class="line">          meta: &#123;</span><br><span class="line">            icon: <span class="string">&#x27;fa fa-home fa-lg&#x27;</span>,</span><br><span class="line">            index: <span class="number">0</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          path: <span class="string">&#x27;capture/:typeBack/:id&#x27;</span>,</span><br><span class="line">          name: <span class="string">&#x27;项目列表&#x27;</span>,</span><br><span class="line">          component: cop_10</span><br><span class="line">        &#125;,</span><br><span class="line">      ]</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>等价于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">  routes: [</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">      name: <span class="string">&#x27;Home&#x27;</span>,</span><br><span class="line">      component: Home,</span><br><span class="line">      children: [</span><br><span class="line">        &#123;</span><br><span class="line">          name: <span class="string">&#x27;首页&#x27;</span>,</span><br><span class="line">          path: <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">          component: cop_10,</span><br><span class="line">          meta: &#123;</span><br><span class="line">            icon: <span class="string">&#x27;fa fa-home fa-lg&#x27;</span>,</span><br><span class="line">            index: <span class="number">0</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          name: <span class="string">&#x27;帮助文档&#x27;</span>,</span><br><span class="line">          path: <span class="string">&#x27;help&#x27;</span>,</span><br><span class="line">          component: cop_10,</span><br><span class="line">          meta: &#123;</span><br><span class="line">            icon: <span class="string">&#x27;fa fa-home fa-lg&#x27;</span>,</span><br><span class="line">            index: <span class="number">0</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="comment">// &#123;</span></span><br><span class="line">        <span class="comment">//   path: &#x27;capture/:typeBack/:id&#x27;,</span></span><br><span class="line">        <span class="comment">//   name: &#x27;项目列表&#x27;,</span></span><br><span class="line">        <span class="comment">//   component: cop_10</span></span><br><span class="line">        <span class="comment">// &#125;,</span></span><br><span class="line">      ]</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>+</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//每次路由之前，进行相关处理</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> cop_10 <span class="keyword">from</span> <span class="string">&#x27;@/components/capture/tables&#x27;</span></span><br><span class="line"></span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  useStaticMenuAndRoutes();</span><br><span class="line">  next()</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">useStaticMenuAndRoutes</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> navTree = [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="string">&quot;id&quot;</span>: <span class="number">1</span>,</span><br><span class="line">      <span class="string">&quot;parentId&quot;</span>: <span class="number">0</span>,</span><br><span class="line">      <span class="string">&quot;name&quot;</span>: <span class="string">&quot; scf&quot;</span>,</span><br><span class="line">      <span class="string">&quot;url&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;icon&quot;</span>: <span class="string">&quot;el-icon-setting&quot;</span>,</span><br><span class="line">      <span class="string">&quot;children&quot;</span>: [&#123;</span><br><span class="line">        <span class="string">&quot;id&quot;</span>: <span class="number">6</span>,</span><br><span class="line">        <span class="string">&quot;parentId&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;租房&quot;</span>,</span><br><span class="line">        <span class="string">&quot;url&quot;</span>: <span class="string">&quot;capture/:typeBack/:id&quot;</span>,</span><br><span class="line">        <span class="string">&quot;icon&quot;</span>: <span class="string">&quot;el-icon-service&quot;</span>,</span><br><span class="line">        <span class="string">&quot;children&quot;</span>: []</span><br><span class="line">      &#125;, &#123;</span><br><span class="line">        <span class="string">&quot;id&quot;</span>: <span class="number">8</span>,</span><br><span class="line">        <span class="string">&quot;parentId&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;商业&quot;</span>,</span><br><span class="line">        <span class="string">&quot;url&quot;</span>: <span class="string">&quot;capture/:typeBack/:id&quot;</span>,</span><br><span class="line">        <span class="string">&quot;icon&quot;</span>: <span class="string">&quot;el-icon-news&quot;</span>,</span><br><span class="line">        <span class="string">&quot;children&quot;</span>: []</span><br><span class="line">      &#125;]</span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="string">&quot;id&quot;</span>: <span class="number">2</span>,</span><br><span class="line">      <span class="string">&quot;parentId&quot;</span>: <span class="number">0</span>,</span><br><span class="line">      <span class="string">&quot;name&quot;</span>: <span class="string">&quot;php&quot;</span>,</span><br><span class="line">      <span class="string">&quot;url&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;icon&quot;</span>: <span class="string">&quot;el-icon-setting&quot;</span>,</span><br><span class="line">      <span class="string">&quot;children&quot;</span>: [&#123;</span><br><span class="line">        <span class="string">&quot;id&quot;</span>: <span class="number">9</span>,</span><br><span class="line">        <span class="string">&quot;parentId&quot;</span>: <span class="number">2</span>,</span><br><span class="line">        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;租房&quot;</span>,</span><br><span class="line">        <span class="string">&quot;url&quot;</span>: <span class="string">&quot;capture/:typeBack/:id&quot;</span>,</span><br><span class="line">        <span class="string">&quot;icon&quot;</span>: <span class="string">&quot;el-icon-service&quot;</span></span><br><span class="line">      &#125;, &#123;</span><br><span class="line">        <span class="string">&quot;id&quot;</span>: <span class="number">11</span>,</span><br><span class="line">        <span class="string">&quot;parentId&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;商业 &quot;</span>,</span><br><span class="line">        <span class="string">&quot;url&quot;</span>: <span class="string">&quot;capture/:typeBack/:id&quot;</span>,</span><br><span class="line">        <span class="string">&quot;icon&quot;</span>: <span class="string">&quot;el-icon-news&quot;</span>,</span><br><span class="line">        <span class="string">&quot;children&quot;</span>: []</span><br><span class="line">      &#125;]</span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="string">&quot;id&quot;</span>: <span class="number">3</span>,</span><br><span class="line">      <span class="string">&quot;parentId&quot;</span>: <span class="number">0</span>,</span><br><span class="line">      <span class="string">&quot;name&quot;</span>: <span class="string">&quot;wf&quot;</span>,</span><br><span class="line">      <span class="string">&quot;url&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;icon&quot;</span>: <span class="string">&quot;el-icon-setting&quot;</span>,</span><br><span class="line">      <span class="string">&quot;children&quot;</span>: [&#123;</span><br><span class="line">        <span class="string">&quot;id&quot;</span>: <span class="number">10</span>,</span><br><span class="line">        <span class="string">&quot;parentId&quot;</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;租房&quot;</span>,</span><br><span class="line">        <span class="string">&quot;url&quot;</span>: <span class="string">&quot;capture/:typeBack/:id&quot;</span>,</span><br><span class="line">        <span class="string">&quot;icon&quot;</span>: <span class="string">&quot;el-icon-service&quot;</span></span><br><span class="line">      &#125;]</span><br><span class="line">    &#125;</span><br><span class="line">  ];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> dynamicRoutes = addDynamicRoutes(navTree);</span><br><span class="line">  router.options.routes[<span class="number">0</span>].children = router.options.routes[<span class="number">0</span>].children.concat(dynamicRoutes);</span><br><span class="line">  router.addRoutes(router.options.routes);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addDynamicRoutes</span>(<span class="params">menuList = [], routes = []</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> temp = []</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; menuList.length; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (menuList[i].children &amp;&amp; menuList[i].children.length &gt;= <span class="number">1</span>) &#123;</span><br><span class="line">      temp = temp.concat(menuList[i].children)</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (menuList[i].url &amp;&amp; <span class="regexp">/\S/</span>.test(menuList[i].url)) &#123;</span><br><span class="line">      menuList[i].url = menuList[i].url.replace(<span class="regexp">/^\//</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">      <span class="comment">// 创建路由配置</span></span><br><span class="line">      <span class="keyword">var</span> route = &#123;</span><br><span class="line">        path: menuList[i].url,</span><br><span class="line">        component: <span class="literal">null</span>,</span><br><span class="line">        name: menuList[i].name,</span><br><span class="line">        meta: &#123;</span><br><span class="line">          icon: menuList[i].icon,</span><br><span class="line">          index: menuList[i].id</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 根据菜单URL动态加载vue组件，这里要求vue组件须按照url路径存储</span></span><br><span class="line">        <span class="comment">// 如url=&quot;sys/user&quot;，则组件路径应是&quot;@/views/sys/User.vue&quot;,否则组件加载不到</span></span><br><span class="line">        <span class="keyword">let</span> url = menuList[i].url</span><br><span class="line">        route[<span class="string">&#x27;component&#x27;</span>] = cop_10</span><br><span class="line">        routes.push(route)</span><br><span class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(e)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (temp.length &gt;= <span class="number">1</span>) &#123;</span><br><span class="line">      addDynamicRoutes(temp, routes)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;动态路由加载...&#x27;</span>)</span><br><span class="line">      <span class="built_in">console</span>.log(routes)</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;动态路由加载完成.&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> routes</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>navTree数据可以从接口中请求。</p>
+<h2 id="5-Spring-boot-vue-跨域"><a href="#5-Spring-boot-vue-跨域" class="headerlink" title="5.Spring-boot+vue 跨域"></a>5.Spring-boot+vue 跨域</h2><p>只需要设置spring-boot，添加类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.bj58.fang.doccenter.config;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.CorsRegistry;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.WebMvcConfigurer;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 跨域配置</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Louis</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> Jan 12, 2019</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CorsConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addCorsMappings</span><span class="params">(CorsRegistry registry)</span> </span>&#123;</span><br><span class="line">        registry.addMapping(<span class="string">&quot;/**&quot;</span>) <span class="comment">// 允许跨域访问的路径</span></span><br><span class="line">                .allowedOrigins(<span class="string">&quot;*&quot;</span>)   <span class="comment">// 允许跨域访问的源</span></span><br><span class="line">                .allowedMethods(<span class="string">&quot;POST&quot;</span>, <span class="string">&quot;GET&quot;</span>, <span class="string">&quot;PUT&quot;</span>, <span class="string">&quot;OPTIONS&quot;</span>, <span class="string">&quot;DELETE&quot;</span>) <span class="comment">// 允许请求方法</span></span><br><span class="line">                .maxAge(<span class="number">168000</span>)    <span class="comment">// 预检间隔时间</span></span><br><span class="line">                .allowedHeaders(<span class="string">&quot;*&quot;</span>)  <span class="comment">// 允许头部设置</span></span><br><span class="line">                .allowCredentials(<span class="keyword">true</span>);   <span class="comment">// 是否发送cookie</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="6-事件："><a href="#6-事件：" class="headerlink" title="6.事件："></a>6.事件：</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@keyup.enter.native</span><br></pre></td></tr></table></figure>
+
+<p>键盘回车事件。</p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/blog/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/blog/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Jinxia Liu
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://liujinxia.github.io/blog/blog/2020/09/30/VUE/" title="VUE" target="_blank">https://liujinxia.github.io/blog/blog/2020/09/30/VUE/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -209,148 +330,107 @@
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://liujinxia.github.io/blog/2020/09/30/VUE/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/blog/2020/09/30/%E7%B2%BE%E5%87%86%E6%B5%8B%E8%AF%95/" class="archive-article-date">
-        <time datetime="2020-09-30T09:34:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/blog/2020/09/30/%E7%B2%BE%E5%87%86%E6%B5%8B%E8%AF%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">精准测试</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/blog/2020/09/30/%E7%B2%BE%E5%87%86%E6%B5%8B%E8%AF%95/" target="_blank">精准测试</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">tester</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/blog/2020/09/30/hexo-doc/" class="archive-article-date">
-        <time datetime="2020-09-30T06:29:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/blog/2020/09/30/hexo-doc/" target="_blank">hexo_doc</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">play</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/blog/2020/09/30/maven-lifecycle/" class="archive-article-date">
-        <time datetime="2020-09-30T03:29:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/blog/2020/09/30/maven-lifecycle/" target="_blank">maven_lifecycle</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
 
 
           </div>
@@ -391,8 +471,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
