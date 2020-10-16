@@ -170,6 +170,275 @@
             
 
   
+    <article id="post-mybatis自定义实现" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/blog/2020/10/16/mybatis%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AE%9E%E7%8E%B0/" target="_blank">mybatis自定义实现</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/blog/2020/10/16/mybatis%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AE%9E%E7%8E%B0/" class="archive-article-date">
+        <time datetime="2020-10-16T06:10:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-16</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>问题1：<img src="/Users/liujinxia/Downloads/project/jinxia/blog/blog/themes/yilia-plus/source/img/image-20201016144736884.png" alt="image-20201016144736884"></p>
+<p>SqlSession接口中，应该只需要getMapperClass就可以了，为什么要定义其他的那些方法？</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/blog/2020/10/16/mybatis%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AE%9E%E7%8E%B0/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-CR" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/blog/2020/10/12/CR/" target="_blank">CR</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/blog/2020/10/12/CR/" class="archive-article-date">
+        <time datetime="2020-10-12T10:08:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-12</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>CR方法：</p>
+<p><img src="/Users/liujinxia/Downloads/project/jinxia/blog/blog/themes/yilia-plus/source/img/image-20201012201358491.png" alt="image-20201012201358491"></p>
+<p>进度：autoloader：php类自动加载机制</p>
+<p>处理列表筛选功能类：</p>
+<table>
+<thead>
+<tr>
+<th>/opt/web/phpc/application/hbg_php_houseapp/phpapps/houselist/packages/modules/HmcModulesCommonEntity.class.php:267</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+</tr>
+</tbody></table>
+<p>基本路由分发：</p>
+<p><img src="/Users/liujinxia/Downloads/project/jinxia/blog/blog/themes/yilia-plus/source/img/image-20201012180813338.png" alt="image-20201012180813338"></p>
+<p><img src="/Users/liujinxia/Downloads/project/jinxia/blog/blog/themes/yilia-plus/source/img/image-20201012181505663.png" alt="image-20201012181505663"></p>
+<p><img src="/Users/liujinxia/Downloads/project/jinxia/blog/blog/themes/yilia-plus/source/img/image-20201014164616878.png" alt="image-20201014164616878"></p>
+<p>–RentList.class.php:38</p>
+<p>​    –HmcModulesCommonEntity.class.php:41【curVer】</p>
+<p>​        –AppVersionConfig.class.php:140【获取版本号】</p>
+<p>​    –HmcModulesCommonEntity.class.php</p>
+<p>​        –CategoryConfig.class.php【 house相关配置】根据请求url，分配不同的租房类型参数《合租，整租，公寓。。。。。》</p>
+<p>   –HmcModulesCommonEntity.class.php【处理参数filterparams】</p>
+<p>​        –HmcModulesCommonEntity.class.php：：parseParameterFromRequest【处理filterparams里面的参数】</p>
+<p>   –HmcModulesCommonEntity.class.php</p>
+<p>​        –HmcModulesCommonEntity.class.php：：oldParamToNewParam【参数新旧转化】</p>
+<p>​    –HmcModulesCommonEntity.class.php</p>
+<p>​        –ScfPassport【获取uid】</p>
+<p>​    –HmcModulesCommonEntity.class.php</p>
+<p>​        –DemandHelper.class.php【获取配置平台直播相关配置】</p>
+<p>​                –Demand.class.php【wtable的初始化】</p>
+<p>​                        –WTableClient.php【 WTable客户端是用于对WTable数据库进行操作的客户端入口。】</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/blog/2020/10/12/CR/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-swagger" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/blog/2020/10/09/swagger/" target="_blank">swagger</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/blog/2020/10/09/swagger/" class="archive-article-date">
+        <time datetime="2020-10-09T06:59:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-09</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="1-解决CROS问题"><a href="#1-解决CROS问题" class="headerlink" title="1.解决CROS问题"></a>1.解决CROS问题</h1><p>chrome plugin</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">test api</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/blog/2020/10/09/swagger/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-VUE" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -328,97 +597,6 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/blog/2020/09/30/%E7%B2%BE%E5%87%86%E6%B5%8B%E8%AF%95/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexo-doc" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/blog/2020/09/30/hexo-doc/" target="_blank">hexo_doc</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/blog/2020/09/30/hexo-doc/" class="archive-article-date">
-        <time datetime="2020-09-30T06:29:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-30</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="Blog-steps-Hexo"><a href="#Blog-steps-Hexo" class="headerlink" title="Blog steps Hexo"></a>Blog steps Hexo</h2><p>参考教程：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26625249">https://zhuanlan.zhihu.com/p/26625249</a></p>
-<p>node版本用v11.0.0</p>
-<h3 id="1-创建github-repository"><a href="#1-创建github-repository" class="headerlink" title="1.创建github repository"></a>1.创建github repository</h3><p>修改settings，github page 路径:/blog  分支用gh-pages</p>
-<p><img src="/blog/img/image-20200930104733400.png" alt="image-20200930104733400"></p>
-    
-    <a class="article-more-a" href="/blog/2020/09/30/hexo-doc/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">play</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/blog/2020/09/30/hexo-doc/">展开全文 >></a>
     </p>
     
 
@@ -655,15 +833,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">play</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">tester</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">test api</a>
               </li>
             
             <div class="clearfix"></div>
