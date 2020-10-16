@@ -10,16 +10,17 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="问题1： SqlSession接口中，应该只需要getMapperClass就可以了，为什么要定义其他的那些方法？">
+  <meta name="description" content="问题1： SqlSession接口中，应该只需要getMapperClass就可以了，为什么要定义其他的那些方法？ 1.CRUD事项讲解：首先先演示一下CUD的操作，通过数据库的查询，展示出演示的效果； 然后讲解对题目的理解和设计： 1、首先getMapper的方式区分于“为每一个mapper接口实现一个mapperImpl类”的方式，主要是使用JDK动态代理的设计模式，动态创建mapper接口的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mybatis自定义实现">
 <meta property="og:url" content="https://liujinxia.github.io/blog/2020/10/16/mybatis%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="问题1： SqlSession接口中，应该只需要getMapperClass就可以了，为什么要定义其他的那些方法？">
+<meta property="og:description" content="问题1： SqlSession接口中，应该只需要getMapperClass就可以了，为什么要定义其他的那些方法？ 1.CRUD事项讲解：首先先演示一下CUD的操作，通过数据库的查询，展示出演示的效果； 然后讲解对题目的理解和设计： 1、首先getMapper的方式区分于“为每一个mapper接口实现一个mapperImpl类”的方式，主要是使用JDK动态代理的设计模式，动态创建mapper接口的">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://liujinxia.github.io/blog/img/image-20201016144736884.png">
+<meta property="og:image" content="https://liujinxia.github.io/blog/img/image-20201016191848752.png">
 <meta property="article:published_time" content="2020-10-16T06:10:54.000Z">
-<meta property="article:modified_time" content="2020-10-16T06:56:09.685Z">
+<meta property="article:modified_time" content="2020-10-16T11:40:21.455Z">
 <meta property="article:author" content="Jinxia Liu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://liujinxia.github.io/blog/img/image-20201016144736884.png">
@@ -202,7 +203,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">30字</span>
+      <span class="post-count">399字</span>
     </span>
   </span>
 
@@ -224,6 +225,17 @@
     
     <p>问题1：<img src="/blog/img/image-20201016144736884.png" alt="image-20201016144736884"></p>
 <p>SqlSession接口中，应该只需要getMapperClass就可以了，为什么要定义其他的那些方法？</p>
+<h2 id="1-CRUD事项讲解："><a href="#1-CRUD事项讲解：" class="headerlink" title="1.CRUD事项讲解："></a>1.CRUD事项讲解：</h2><p>首先先演示一下CUD的操作，通过数据库的查询，展示出演示的效果；</p>
+<p>然后讲解对题目的理解和设计：</p>
+<p>1、首先getMapper的方式区分于“为每一个mapper接口实现一个mapperImpl类”的方式，主要是使用JDK动态代理的设计模式，动态创建mapper接口的代理对象，而不是针对每一个创建一个代理对象，大大减少了开发工作量；</p>
+<p>2、项目的初始化采用的是教程中，老师的IPersistence类，这个类实现了基本的查询功能，需要我们自己添加增加、删除和更新的功能实现和验证。对于自定义的mybatis框架来说，主要的结构，我画了如下的结构图：</p>
+<p><img src="/blog/img/image-20201016191848752.png" alt="image-20201016191848752"></p>
+<p>通过上面结构图的讲解，可以知道，如果要实现CUD方法，需要修改的部分包括：</p>
+<p>1.解析文件的过程中，除了需要识别select标签，还要解析出insert,delete和update标签，所以修改XMLMapperBuilder类，将CUD的标签也初始化到Configuration的sqlMappedStatementMap中去。</p>
+<p>2.SqlSession及其实现类DefaultSqlSession中需要添加CUD方法，根据statementid，调用execute中的不同方法</p>
+<p>3.Execute 及其实现类中需要添加CUD方法</p>
+<p>所以最终的代码，我上传到了地址<a target="_blank" rel="noopener" href="https://gitee.com/liujinxia1/one_homework/tree/master/code%E3%80%82">https://gitee.com/liujinxia1/one_homework/tree/master/code。</a></p>
+<p>最后这一块作业的内容大致就是这样的，请批评指正，谢谢。</p>
 
     
 
